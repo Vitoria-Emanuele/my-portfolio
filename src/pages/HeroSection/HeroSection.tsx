@@ -52,7 +52,7 @@ const HeroSection: React.FC = () => {
     
 
     const handleEmail = () => {
-        const emailAddress = 'vitoriaemanueledesousa@gamil.com';
+        const emailAddress = 'vitoriaemanueledesousa@gmail.com';
         const subject = 'Subject';
         const body = 'Hello! I saw your portfolio...';
 
