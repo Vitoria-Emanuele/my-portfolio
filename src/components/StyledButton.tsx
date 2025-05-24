@@ -22,6 +22,8 @@ const StyledButton: React.FC<StyledButtonProps> = ({ children, onClick }) => {
         cursor: "pointer",
         transition: "all 250ms cubic-bezier(0.4, 0, 0.2, 1)",
         '&:hover': {
+            transform: 'translateY(-2px)',
+            boxShadow: '0 4px 16px rgba(0, 0, 0, 0.2)',
             backgroundColor: theme.palette.secondary.light,
         },
         '&:active': {  // Estilo durante o clique

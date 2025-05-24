@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
-import { styled } from '@mui/material';
+import { styled, useTheme } from '@mui/material';
 
 export const StyledNavLink = styled("a")(() => ({
     textDecoration: "none",
@@ -34,6 +34,7 @@ export const StyledDesktopToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 
 export default function Navbar() {
+    const theme = useTheme();
     const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
 
     const handleMenu = (event: React.MouseEvent<HTMLElement>) => {
@@ -54,7 +55,22 @@ export default function Navbar() {
 
     return (
         <Box sx={{ flexGrow: 1 }}>
-            <AppBar position="absolute" sx={{backgroundColor: '#fff', color: '#000'}}>
+            <AppBar position="fixed"
+            sx={{backgroundColor: theme.palette.primary.dark + 'cc',
+                backdropFilter: 'blur(8px)',
+                color: theme.palette.primary.contrastText,
+                boxShadow: 'none',
+                transition: 'all 0.3s ease',
+                '&:hover': {
+                        backgroundColor: theme.palette.primary.dark + 'ee',
+                },
+                '& .MuiPaper-root': {
+                        backgroundColor: theme.palette.primary.dark,
+                        color: theme.palette.primary.contrastText,
+                        backdropFilter: 'blur(8px)'
+                    }
+            }}
+            >
                 <StyledMobileToolbar>
                     <IconButton
                         size="large"
@@ -87,7 +103,7 @@ export default function Navbar() {
                             <StyledNavLink>Sobre</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                            <StyledNavLink>Skills</StyledNavLink>
+                            <StyledNavLink>Habilidades</StyledNavLink>
                         </MenuItem>
                         <MenuItem onClick={() => handleSmoothScroll("projects")}>
                             <StyledNavLink>Projetos</StyledNavLink>
@@ -99,7 +115,7 @@ export default function Navbar() {
                         <StyledNavLink>Sobre</StyledNavLink>
                     </MenuItem>
                     <MenuItem onClick={() => handleSmoothScroll("skills")}>
-                        <StyledNavLink>Skills</StyledNavLink>
+                        <StyledNavLink>Habilidades</StyledNavLink>
                     </MenuItem>
                     <MenuItem onClick={() => handleSmoothScroll("projects")}>
                         <StyledNavLink>Projetos</StyledNavLink>

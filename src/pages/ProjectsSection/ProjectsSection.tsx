@@ -3,6 +3,8 @@ import type { ProjectCardProps } from "../../components/ProjectCard";
 import AnimationComponent from "../../components/AnimationComponet";
 import ProjectCard from "../../components/ProjectCard";
 
+import MCC from "../../assets/images/mcc.jpg"
+
 
 const ProjectsSection: React.FC = () => {
 
@@ -13,13 +15,13 @@ const ProjectsSection: React.FC = () => {
 
   const projects = [
     {
-        title: "Project Exemple",
-        subtitle: "Jul 2023 - Dez 2023",
-        srcImg: "/src/assets/images/project-trello.png",
-        description: "trabalhando nisso",
-        technologies: "Technologies: Python",
-        websiteURL: "none",
-        codeURL: "https://github.com/Vitoria-Emanuele/RedesDeComputadores",
+        title: "Meninas na Ciência da Computação-MCC",
+        subtitle: "Ago 2024 - Até o momento",
+        srcImg: MCC,
+        description: "O MCC é um projeto de extensão do Centro de Informática da Univeridade Federal da Paraíba formado por um grupo de professoras e alunas que tem como missão estimular alunas de escolas públicas, despertando a sua vocação para a área de Ciência da Computação através de capacitação, debates, palestras, encontros e rodas de conversa",
+        technologies: "Scratch, MIT App Invetor, Ferramentas Google e mais.",
+        websiteURL: "https://mcc.ci.ufpb.br/",
+        codeURL: "https://mcc.ci.ufpb.br/",
     },
   ]
   
@@ -27,7 +29,7 @@ const ProjectsSection: React.FC = () => {
     <>
       <StyledExperience>
         < Container maxWidth="lg">
-          <Box id="projects" pt={5} pb={3}>
+          <Box id="projects" pt={10} pb={5}>
             <Typography variant="h2" textAlign="center" color="primary.contrastText">Projetos</Typography>
           </Box>
           < Grid  container spacing={5} pb={3}>
