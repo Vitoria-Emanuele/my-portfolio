@@ -127,7 +127,7 @@ const AboutSection: React.FC = () => {
 
             <Grid container spacing={4} justifyContent="center" pb={6}>
               <Grid size={{ xs:12, md:3}}>
-                <AnimationComponent moveDirection="right">
+                <AnimationComponent moveDirection="left">
                   < StyledCard>
                     <SchoolIcon/>
                     <Typography textAlign="center" fontWeight={600} mb={2}>Treinamento</Typography>
@@ -138,14 +138,12 @@ const AboutSection: React.FC = () => {
               </Grid>
 
               <Grid size={{ xs:12, md:3}}>
-                <AnimationComponent moveDirection="right">
-                  < StyledCard>
-                    <SchoolIcon/>
-                    <Typography textAlign="center" fontWeight={600} mb={2}>Curso</Typography>
-                    <Typography textAlign="center">Introdução à segurança cibernetica</Typography>
-                    <Typography textAlign="center" sx={{ color: (theme) => theme.palette.secondary.contrastText}} variant="caption">CISCO</Typography>
-                  </StyledCard>
-                </AnimationComponent>
+                <StyledCard>
+                  <SchoolIcon/>
+                  <Typography textAlign="center" fontWeight={600} mb={2}>Curso</Typography>
+                  <Typography textAlign="center">Introdução à segurança cibernetica</Typography>
+                  <Typography textAlign="center" sx={{ color: (theme) => theme.palette.secondary.contrastText}} variant="caption">CISCO</Typography>
+                </StyledCard>
               </Grid>
 
               <Grid size={{ xs:12, md:3}}>
@@ -159,8 +157,11 @@ const AboutSection: React.FC = () => {
                 </AnimationComponent>
               </Grid>
 
+            </Grid> 
+
+            <Grid container spacing={4} justifyContent="center" pb={6}>
               <Grid size={{ xs:12, md:3}}>
-                <AnimationComponent moveDirection="right">
+                <AnimationComponent moveDirection="left">
                   < StyledCard>
                     <SchoolIcon/>
                     <Typography textAlign="center" fontWeight={600} mb={2}>Curso</Typography>
@@ -170,8 +171,28 @@ const AboutSection: React.FC = () => {
                 </AnimationComponent>
               </Grid>
 
-            </Grid>   
-  
+              <Grid size={{ xs:12, md:3}}>
+                < StyledCard>
+                  <SchoolIcon/>
+                  <Typography textAlign="center" fontWeight={600} mb={2}>Curso</Typography>
+                  <Typography textAlign="center">Inteligência Artificial e Computacional</Typography>
+                  <Typography textAlign="center" sx={{ color: (theme) => theme.palette.secondary.contrastText}} variant="caption">FIAP</Typography>
+                  </StyledCard>
+              </Grid>
+
+              <Grid size={{ xs:12, md:3}}>
+                <AnimationComponent moveDirection="right">
+                  < StyledCard>
+                    <SchoolIcon/>
+                    <Typography textAlign="center" fontWeight={600} mb={2}>Curso</Typography>
+                    <Typography textAlign="center">Big Data e Analytics</Typography>
+                    <Typography textAlign="center" sx={{ color: (theme) => theme.palette.secondary.contrastText}} variant="caption">FIAP</Typography>
+                  </StyledCard>
+                </AnimationComponent>
+              </Grid>
+
+            </Grid>
+
           </Container>
         </ StyledAbout>
         

@@ -49,7 +49,7 @@ const AnimationComponent: React.FC<AnimationComponentProps> = ({ children, moveD
     }, []);
 
     const StyledAnimationComponent = styled("div")<{ startAnimation: boolean, moveDirection: string }>(({ startAnimation, moveDirection }) => ({
-        animation: startAnimation ? `${moveDirection} 3s linear` : "none"
+        animation: startAnimation ? `${moveDirection} 2s linear` : "none"
     }));
 
     return (
