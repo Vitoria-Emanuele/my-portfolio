@@ -42,7 +42,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         '&:active': { 
             transform: 'translateY(2px)',
             boxShadow: '0 2px 6px rgba(0, 0, 0, 0.1)',
-  },
+        },
         '&:hover': {
             backgroundColor: theme.palette.primary.dark,
             color: theme.palette.primary.contrastText,

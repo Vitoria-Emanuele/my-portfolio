@@ -63,12 +63,24 @@ const AboutSection: React.FC = () => {
     
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>,
     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/anaconda/anaconda-original.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"/>,
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"/>,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecolab/googlecolab-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/matplotlib/matplotlib-plain.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" />
+          
+  ]
+
+  const skillsSetDev = [
+    
+    
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/materialui/materialui-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />,
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />,
           
   ]
 
@@ -84,7 +96,7 @@ const AboutSection: React.FC = () => {
             <hr />
             <Box pt={3} pb={5} >
               <Typography sx={{ color: (theme) => theme.palette.primary.contrastText}} variant="subtitle1" textAlign="center">
-              Olá! Meu nome é Vitória Emanuele, tenho 21 anos e sou acadêmica de Ciência de Dados e Inteligência Artificial pela UFPB. Meu interesse pela tecnologia começou ainda no ensino médio, quando cursei o técnico em Informática integrado. Desde então, me encantei com a capacidade que a tecnologia tem de resolver problemas, gerar impacto e transformar realidades.
+              Olá! Meu nome é Vitória Emanuele sou acadêmica de Ciência de Dados e Inteligência Artificial pela UFPB. Meu interesse pela tecnologia começou ainda no ensino médio, quando cursei o técnico em Informática integrado. Desde então, me encantei com a capacidade que a tecnologia tem de resolver problemas, gerar impacto e transformar realidades.
               
               Sou uma pessoa naturalmente curiosa, apaixonada por aprender, não só na minha área, mas em diferentes campos, culturas e conhecimentos. Valorizo muito a organização, o trabalho bem feito e sou extremamente comprometida com tudo que me proponho a fazer. Tenho facilidade em trabalhar em equipe, sou colaborativa, gosto de ajudar e também assumo posições de liderança com naturalidade, sempre buscando organizar, planejar e entregar o melhor resultado possível.
 
@@ -203,16 +215,27 @@ const AboutSection: React.FC = () => {
               <Typography sx={{ color: (theme) => theme.palette.primary.contrastText}} variant="h3" textAlign="center" fontWeight={300}>Habilidades</Typography>
             </Box>
             <Box mb={5}>
-              <Grid container spacing={3} justifyContent="center">
+              <Grid container spacing={8} justifyContent="center" pb = {6}>
                 {skillsSet.map((skill, index) => (
                   <Grid size={{ xs:3, sm:3, md:2, lg:1.5}} key={index}>
-                    <StyledCard>
+                    <StyledCard sx={{backgroundColor: (theme) => theme.palette.primary.light}}>
                       {skill}
                     </StyledCard>
                     
                   </Grid>
                 ))}
               </Grid>
+
+              <Grid container spacing={8} justifyContent="center" pb = {8}>
+                {skillsSetDev.map((skill, index) => (
+                  <Grid size={{ xs:3, sm:3, md:2, lg:1.5}} key={index}>
+                    <StyledCard sx={{backgroundColor: (theme) => theme.palette.primary.light}}>
+                      {skill}
+                    </StyledCard> 
+                  </Grid>
+                ))}
+              </Grid>
+
             </Box>
           </Container>
         </StyledSkill>  
