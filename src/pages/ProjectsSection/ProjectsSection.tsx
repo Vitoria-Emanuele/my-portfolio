@@ -4,6 +4,8 @@ import AnimationComponent from "../../components/AnimationComponet";
 import ProjectCard from "../../components/ProjectCard";
 
 import MCC from "../../assets/images/mcc.jpg"
+import livraria from "../../assets/images/livraria.png"
+import login from "../../assets/images/login.png" 
 
 
 const ProjectsSection: React.FC = () => {
@@ -23,24 +25,36 @@ const ProjectsSection: React.FC = () => {
         websiteURL: "https://mcc.ci.ufpb.br/",
         codeURL: "https://mcc.ci.ufpb.br/",
     },
+
+    {
+      title: "Sistema de uma Livraria",
+      subtitle: "-",
+      srcImg: livraria,
+      srcImg2: login,
+      description:"Sistema full-stack para gestão de livraria, implementando controle de vendas e estoque integrados. Desenvolvido como projeto da disciplina de Banco de Dados, contempla arquitetura completa com backend robusto e interface frontend responsiva.",
+      technologies: "PostgreSQl, Python, FastAPI, Typescript, MUI e mais",
+      websiteURL: "https://github.com/Vitoria-Emanuele/Livraria",
+      codeURL: "https://github.com/Vitoria-Emanuele/Livraria",
+  },
   ]
   
   return (
     <>
       <StyledExperience>
         < Container maxWidth="lg">
-          <Box id="projects" pt={10} pb={5}>
+          <Box id="projects" pt={5} pb={5}>
             <Typography variant="h2" textAlign="center" color="primary.contrastText">Projetos</Typography>
           </Box>
-          < Grid  container spacing={5} pb={3}>
+          < Grid  container spacing={5} pb={5}>
             {projects.map((project: ProjectCardProps, index: number) => (
-              < Grid size={{ md:6}} key={index}>
+              < Grid size={{ md:4}} key={index}>
                 < AnimationComponent moveDirection={index % 2 == 0 ? "right" : "left"}>
                 
                   < ProjectCard
                     title={project.title}
                     subtitle={project.subtitle}
                     srcImg={project.srcImg}
+                    srcImg2={project.srcImg2} // Passa a segunda imagem (será undefined para o MCC)
                     description={project.description}
                     technologies={project.technologies}
                     websiteURL={project.websiteURL}
