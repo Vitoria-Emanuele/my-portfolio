@@ -3,7 +3,7 @@ import type { ProjectCardProps } from "../../components/ProjectCard";
 import AnimationComponent from "../../components/AnimationComponet";
 import ProjectCard from "../../components/ProjectCard";
 
-import MCC from "../../assets/images/mcc.jpg"
+import MCC from "../../assets/images/MCC.jfif"
 import livraria from "../../assets/images/livraria.png"
 import login from "../../assets/images/login.png" 
 
@@ -63,6 +63,7 @@ const ProjectsSection: React.FC = () => {
 
                 </AnimationComponent>
               </Grid>
+              
             ))}
           </Grid>
 
