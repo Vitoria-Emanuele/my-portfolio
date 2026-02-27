@@ -217,7 +217,7 @@ const AboutSection: React.FC = () => {
             <Box mb={5}>
               <Grid container spacing={8} justifyContent="center" pb = {6}>
                 {skillsSet.map((skill, index) => (
-                  <Grid size={{ xs:3, sm:3, md:2, lg:1.5}} key={index}>
+                  <Grid size={{ xs:5, sm:3, md:2, lg:2}} key={index}>
                     <StyledCard sx={{backgroundColor: (theme) => theme.palette.primary.light}}>
                       {skill}
                     </StyledCard>
@@ -228,7 +228,7 @@ const AboutSection: React.FC = () => {
 
               <Grid container spacing={8} justifyContent="center" pb = {8}>
                 {skillsSetDev.map((skill, index) => (
-                  <Grid size={{ xs:3, sm:3, md:2, lg:1.5}} key={index}>
+                  <Grid size={{ xs:5, sm:3, md:2, lg:2}} key={index}>
                     <StyledCard sx={{backgroundColor: (theme) => theme.palette.primary.light}}>
                       {skill}
                     </StyledCard> 

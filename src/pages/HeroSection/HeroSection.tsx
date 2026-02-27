@@ -1,7 +1,7 @@
 import {Box, Container, Grid, styled, Typography } from "@mui/material"
 
 import Avatar from "../../assets/images/avatar.jpg"
-import CV from "../../assets/pdfs/VitoriaEmanueleCV.docx.pdf"
+import CV from "../../assets/pdfs/VitoriaEmanuele_CV.docx.pdf"
 
 import StyledButton from "../../components/StyledButton"
 import Typewriter from "../../components/Typewriter"
