@@ -96,9 +96,9 @@ const AboutSection: React.FC = () => {
             <hr />
             <Box pt={3} pb={5} >
               <Typography sx={{ color: (theme) => theme.palette.primary.contrastText}} variant="subtitle1" textAlign="center">
-              Olá! Meu nome é Vitória Emanuele sou acadêmica de Ciência de Dados e Inteligência Artificial pela UFPB. Meu interesse pela tecnologia começou ainda no ensino médio, quando cursei o técnico em Informática integrado. Desde então, me encantei com a capacidade que a tecnologia tem de resolver problemas, gerar impacto e transformar realidades.
+              Hi! My names is Vitória Emanuele, i am from Brazil, i am a student of Data Scienci and AI in a Federal University of Paraíba UFPB. I'm tired of writing in english. Let's go back to portuguese... Meu interesse pela tecnologia começou ainda no ensino médio, quando cursei o técnico em Informática integrado. Desde então, me encantei com a capacidade que a tecnologia tem de resolver problemas, gerar impacto e transformar realidades.
               
-              Sou uma pessoa naturalmente curiosa, apaixonada por aprender, não só na minha área, mas em diferentes campos, culturas e conhecimentos. Valorizo muito a organização, o trabalho bem feito e sou comprometida com tudo que me proponho a fazer. Tenho facilidade em trabalhar em equipe, sou colaborativa, gosto de ajudar e também assumo posições de liderança com naturalidade, sempre buscando organizar, planejar e entregar o melhor resultado possível.
+              Sou uma pessoa naturalmente curiosa, apaixonada por aprender, não só na minha área, mas em diferentes campos, culturas e conhecimentos. Valorizo muito a organização, o trabalho bem feito e sou extremamente comprometida com tudo que me proponho a fazer. Tenho facilidade em trabalhar em equipe, sou colaborativa, gosto de ajudar e também assumo posições de liderança com naturalidade, sempre buscando organizar, planejar e entregar o melhor resultado possível.
 
               A área de Dados e Inteligência Artificial me encanta especialmente pela oportunidade de gerar valor, tomar decisões mais inteligentes e, acima de tudo, impactar positivamente a vida das pessoas através da tecnologia.
 
