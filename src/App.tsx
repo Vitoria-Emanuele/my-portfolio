@@ -20,3 +20,5 @@ const App = () => {
 }
 
 export default App
+
+// faz o psuh, npm run deploy e pronto 

@@ -20,7 +20,7 @@ const ProjectsSection: React.FC = () => {
         title: "Meninas na Ciência da Computação-MCC",
         subtitle: "Ago 2024 - Até o momento",
         srcImg: MCC,
-        description: "O MCC é um projeto de extensão do Centro de Informática da Univeridade Federal da Paraíba formado por um grupo de professoras e alunas que tem como missão estimular alunas de escolas públicas, despertando a sua vocação para a área de Ciência da Computação através de capacitação, debates, palestras, encontros e rodas de conversa",
+        description: "O MCC é um projeto de extensão do Centro de Informática da Univeridade Federal da Paraíba formado por um grupo de professoras e alunas que tem como missão estimular alunas de escolas públicas, despertando a sua vocação para a área de Ciência da Computação através de capacitação, palestras, encontros e rodas de conversa",
         technologies: "Scratch, MIT App Invetor, Ferramentas Google e mais.",
         websiteURL: "https://mcc.ci.ufpb.br/",
         codeURL: "https://mcc.ci.ufpb.br/",
