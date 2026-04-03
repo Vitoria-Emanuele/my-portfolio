@@ -28,10 +28,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     const StyledImg = styled("img")(({ theme }) => ({
         width: "100%",
-        objectFit: "contain",
-        height: "80vw",
+        objectFit: "cover",
+        height: "200vw",
+        borderRadius: "8px",
+        margin: "12px 0",
         padding: "4px 0",
-        cursor: images.length > 1 ? "pointer" : "default", // Cursor apenas se tiver mais de uma imagem
+        cursor: images.length > 1 ? "pointer" : "default", 
         [theme.breakpoints.up('md')]: {
             height: "45vh",
         },
@@ -39,7 +41,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     
 
     const StyledCard = styled("div")(({ theme}) => ({
-        borderRadius: "3px",
+        borderRadius: "16px",
+        display: "flex",
+        flexDirection: "column",
+        height: "100%",
         border: `0.10px solid  ${theme.palette.secondary.dark}`,
         backgroundColor: theme.palette.secondary.dark,
         color: theme.palette.secondary.contrastText,
@@ -82,7 +87,15 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 </Typography>
             )}
             
-            <Typography>
+            <Typography
+                sx={{
+                    display: '-webkit-box', 
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: 'vertical',
+                    overflow: 'hidden',
+                    minHeight: '4.5em'
+                    }}
+            >
                 {description}
             </Typography>
             <Typography fontWeight={600} pt={2}>
